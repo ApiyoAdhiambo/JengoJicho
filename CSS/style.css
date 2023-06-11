@@ -1,0 +1,218 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: cornsilk;
+}
+.firstSection{
+  
+    max-width: 100%;
+    max-height: 100vh;
+    /* border: 2px solid brown; */
+ 
+}
+#animateHeading{
+    max-width: 100%;
+    max-height: 40%;
+    animation-name: firstHeading;
+    animation-duration: 3s;
+    position: relative;
+    animation-fill-mode: forwards;
+
+}
+@keyframes firstHeading {
+    0%{top:-180px}
+    100%{top: 8px}
+    
+}
+.container{
+    display: flex;
+    max-width: 85%;
+    margin-top: 90px;
+    margin-left: 80px;
+    box-shadow: 20px 10px 10px black;
+    justify-content: space-between;
+}
+#left{
+    flex: 50%;
+    background-color: black;
+    color: aliceblue;
+    max-width: 50%;
+    height: 100%;
+    margin-left: 10px;
+    
+}
+#logo{
+    max-height: 80px;
+}
+#firstSectionRight{
+    max-width: 50%;
+   background-image: url(/images/BuildingProject7.jpg);
+   max-height: 100%;
+   flex: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.firstSecImg{
+    height: 100%;
+    width: 100%;
+    /* object-fit: contain; */
+}
+
+/* styling texts */
+h1{
+    padding-left: 80px;
+    font-size: 15px;
+    color: bisque;
+}
+#headingHint{
+   padding-left: 80px;
+   margin-bottom: 20px;
+}
+.firstHr{
+    width: 40%;
+   margin-left: 80px;
+}
+.construction, .property{
+    font-style: italic;
+    
+}
+.about{
+    padding-left: 80px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-right: 80px;
+    animation-name: aboutParagraph;
+    animation-duration: 3s;
+    position: relative;
+    /* animation-fill-mode: forwards; */
+}
+@keyframes aboutParagraph {
+    0%{left: -500px}
+    100%{left:0px}
+}
+.more{
+    margin-left: 400px;
+    margin-bottom: 20px;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    padding: 5px;
+    animation-name: more;
+    animation-duration: 3s;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+
+    transition-property: transform;
+    transition-duration: 3s;
+}
+@keyframes more {
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+    
+}
+.more:hover{
+    background-color: gold;
+    font-weight: bold;
+    cursor: pointer;
+    transform: rotateY(180deg);
+}
+/* end of first section styling */
+
+.secondSection {
+    background-color: black;
+    max-width: 100%;
+    max-height: 100vh;
+    border: 2px solid blueviolet;
+    margin-top: 30px;
+    margin-left: 80px;
+    margin-right: 100px;
+    display: flex;
+    justify-content: center; /* Add this line */
+  }
+  #slideContainer {
+    background-color: black;
+    color: aliceblue;
+    max-width: 85%;
+    height: 400px; /* Set a fixed height */
+    display: flex;
+    overflow: hidden;
+    border: 20px solid #fff;
+    border-radius: 8px;
+    box-shadow: 10px 25px 30px rgba(30, 30, 200, 30.);
+    border: 4px solid black;
+    margin-top: 100px;
+  }
+  
+  .wrapper {
+    width: 100%;
+    max-height: 100%; /* Set max-height to 100% */
+    display: flex;
+    animation: slide 16s infinite;
+  }
+
+@keyframes slide {
+    0%{
+        transform: translateX(0);
+    }
+    25%{
+        transform: translateX(0);
+
+    }
+    30%{
+        transform: translateX(-100%);
+
+    }
+    50%{
+        transform: translateX(-100%);
+    }
+    55%{
+        transform: translateX(-200%);
+    }
+    75%{
+        transform: translateX(-200%);
+    }
+    80%{
+        transform: translateX(-300%);
+    }
+    100%{
+        transform: translateX(-300%);
+    }
+    
+} 
+ #wrapper img{
+    width: 100%;
+}
+
+
+#ourServices{
+    
+    background-color: black;
+    border-left: 2px double bisque;
+}
+.ourServicesHead{
+    font-size: 30px;
+    padding-left: 24px;
+    padding-top: 20px;
+    color: #fff;
+ 
+}
+ #house, #commercial, #legal{
+    color: bisque;
+    padding-left: 50px;
+    padding-top: 20px;
+    font-size: 15px;
+}
+
+#residence, #biashara, #lawyer{
+    padding-left: 30px;
+    padding-right: 10px;
+    color: aliceblue;
+} 
+
+
+/* styling slide images */
+
